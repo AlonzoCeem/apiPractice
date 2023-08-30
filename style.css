@@ -1,0 +1,54 @@
+/* The following applies globally. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:gainsboro;
+}
+
+h1 {
+    font-family:monospace;
+    text-align: center;
+    font-size:50px;
+    margin:0px;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+/* The following applies to the .charContainer elements. */
+.name {
+    background-color:white;
+    box-shadow: 5px 5px black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    margin: 1rem 2rem 0rem 2rem;
+    width: calc(100%/3 - 4rem);
+    height: 15vh;
+    border: 1px solid black;
+}
+
+#charContainer > .name:hover {
+    background-color:black;
+}
+#charContainer {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* The following applies to the #selected elements. */
+#selected > div {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#selected > div > h2 {
+    width: calc(100%/4 - 4rem);
+    margin: 1rem 2rem 1rem 2rem;
+}
